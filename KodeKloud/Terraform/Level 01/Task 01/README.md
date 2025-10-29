@@ -23,7 +23,7 @@ The objective was to **create an AWS key pair using Terraform**.
 When approaching this challenge, I broke it down into a sequence of steps:
 
 1. Understand what an AWS key pair is and why it is used.
-2. Write the Terraform configuration to generate and register the key pair.    
+2. Write the Terraform configuration to generate and register the key pair.
 3. Initialize and apply the Terraform workflow to create the infrastructure.
 4. Verify that the key pair was created successfully on AWS.
 
@@ -47,7 +47,6 @@ Terraform provides two main resources for this task:
 
 - `tls_private_key` to generate an RSA key locally.
 - `aws_key_pair` to register the public key with AWS.
-
 
 Below is the complete configuration that meets the requirements:
 
@@ -128,8 +127,8 @@ aws ec2 describe-key-pairs
 
 Expected Output:
 
-```bash
-{  
+```json
+{
    "KeyPairs": [  
        {  
            "KeyPairId": "key-0868c3d05a6ab6a35",  
