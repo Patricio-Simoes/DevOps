@@ -1,24 +1,20 @@
 ---
-date: 2025-10-29
+date: "2025-10-30"
 tags:
   - KodeKloud
-  - Terraform
 topics:
-  - AWS VPCs
 ---
-# Task 04 - AWS VPC Creation with Terraform
+# README
 
-Task number 4 was yet again focused on AWS VPCs. But this time, there was a mandatory IPv4 CIDR block declared.
+Task number 5 was yet again focused on AWS VPCs. The change this time, was that, the VPC should have a IPv6 address associated.
 
-The objective was to **create a VPC in AWS with a specific CIDR using Terraform**.
-
-Overall, this task was the same as the previous one, with the exception that this one had a mandatory CIDR declared.
+The objective was to **create a VPC in AWS with an IPv6 associated address using Terraform**.
 
 **Requirements:**
 
-- Create a VPC named **`datacenter-vpc`**;
+- Create a VPC named **`nautilus-vpc`**;
 - Deploy in region **`us-east-1`**;
-- Use the **`192.168.0.0/24`** IPv4 CIDR block;
+- Associate an IPv6 address to the VPC.
 
 ## Step-by-Step Solution
 
@@ -47,12 +43,13 @@ Terraform provides a resource for this task:
 Below is the complete configuration that meets the requirements:
 
 ```hcl
-resource "aws_vpc" "datacenter-vpc" {
+resource "aws_vpc" "nautilus-vpc" {
 	cidr_block = "192.168.0.0/24"
-	
+	assign_generated_ipv6_cidr_block = true
+
 	tags = {
 		# The Name tag defines the name of the VPC in AWS.
-		Name = "datacenter-vpc"
+		Name = "nautilus-vpc"
 	}
 }
 ```
@@ -94,36 +91,38 @@ Once Terraform finishes applying the configuration, verifying the solution requi
 ### 1. Check if the VPC was created on AWS
 
 ```bash
-aws ec2 describe-vpcs --region=us-east-1
+terraform state show aws_vpc.nautilus-vpc
 ```
 
 Expected output:
 
 ```json
-{
-	"OwnerId": "000000000000",
-	"InstanceTenancy": "default",
-	"Ipv6CidrBlockAssociationSet": [],
-	"CidrBlockAssociationSet": [
-		{
-			"AssociationId": "vpc-cidr-assoc-134c5042c1578ffe3",
-			"CidrBlock": "192.168.0.0/24",
-			"CidrBlockState": {
-				"State": "associated"
-			}
-		}
-	],
-	"IsDefault": false,
-	"Tags": [
-		{
-			"Key": "Name",
-			"Value": "datacenter-vpc"
-		}
-	],
-	"VpcId": "vpc-cb546a507056f3f08",
-	"State": "available",
-	"CidrBlock": "192.168.0.0/24",
-	"DhcpOptionsId": "default"
+resource "aws_vpc" "nautilus-vpc" {
+	arn = "arn:aws:ec2:us-east-1:000000000000:vpc/vpc-1e62e82acd6d27899"
+	assign_generated_ipv6_cidr_block = true
+	cidr_block = "192.168.0.0/24"
+	default_network_acl_id = "acl-a0106031634b84a78"
+	default_route_table_id = "rtb-9a2b4851e894ba6a2"
+	default_security_group_id = "sg-de90c2e7289ced984"
+	dhcp_options_id = "default"
+	enable_dns_hostnames = false
+	enable_dns_support = true
+	enable_network_address_usage_metrics = false
+	id = "vpc-1e62e82acd6d27899"
+	instance_tenancy = "default"
+	ipv6_association_id = "vpc-cidr-assoc-1eaa8532dabfb5559"
+	ipv6_cidr_block = "2400:6500:f6b9:7d00::/56"
+	ipv6_cidr_block_network_border_group = null
+	ipv6_ipam_pool_id = null
+	ipv6_netmask_length = 0
+	main_route_table_id = "rtb-9a2b4851e894ba6a2"
+	owner_id = "000000000000"
+	tags = {
+		"Name" = "nautilus-vpc"
+	}
+	tags_all = {
+		"Name" = "nautilus-vpc"
+	}
 }
 ```
 
