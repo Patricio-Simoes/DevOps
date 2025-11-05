@@ -43,7 +43,7 @@ terraform apply
 
 ### CI/CD Automation
 
-This project includes a CI/CD component that automates Terraform deployment.
+This project includes a CI/CD component that automates Terraform deployment. (Check the .github folder on the root of this repository).
 
 The pipeline authenticates with AWS using a configured IAM credentials pair and runs Terraform commands to validate, plan, and apply changes automatically.
 

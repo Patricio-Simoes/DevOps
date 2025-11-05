@@ -1,0 +1,48 @@
+name: terraform-dev-environment-infrastructure-deployment
+run-name: (Project - Dev-Environment) Infrastructure Deployment
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+env:
+  AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+  AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+  AWS_DEFAULT_REGION: ${{ vars.AWS_DEFAULT_REGION }}
+  PROJECT_DIR: "Terraform/Projects/Dev-Environment"
+
+jobs:
+  #* VALIDATION JOB – Validate syntax and show plan.
+  plan:
+    name: Validate & Plan
+    runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/patricio-simoes/terraform-aws:latest
+    environment: Sandbox
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Terraform Plan
+        run: bash ${PROJECT_DIR}/scripts/plan.sh
+
+  #* DEPLOYMENT JOB – Apply infrastructure with manual approval.
+  deploy:
+    name: Deploy Infrastructure
+    runs-on: ubuntu-latest
+    container:
+      image: ghcr.io/patricio-simoes/terraform-aws:latest
+    needs: plan
+    environment: Sandbox
+    concurrency: deploy-group #! Prevent concurrent deploys.
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Terraform Apply
+        run: bash ${PROJECT_DIR}/scripts/deploy.sh

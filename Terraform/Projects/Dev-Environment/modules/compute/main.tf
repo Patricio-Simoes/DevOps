@@ -29,7 +29,7 @@ resource "tls_private_key" "web_server_key" {
 }
 
 resource "aws_key_pair" "web_server_kp" {
-  key_name   = "server-kp"
+  key_name   = "web-server-kp"
   public_key = tls_private_key.web_server_key.public_key_openssh
 }
 
