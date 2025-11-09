@@ -1,8 +1,6 @@
 name: terraform-dev-environment-infrastructure-deployment
 run-name: (Project - Dev-Environment) Infrastructure Deployment
 on:
-  push:
-    branches: [ main ]
   workflow_dispatch:
 
 permissions:
