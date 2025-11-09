@@ -2,7 +2,9 @@
 date: "2025-10-30"
 tags:
   - KodeKloud
+  - Terraform
 topics:
+  - AWS VPCs
 ---
 # README
 
@@ -82,7 +84,7 @@ terraform plan
 terraform apply -auto-approve
 ```
 
-**Purpose:** Review the execution plan, then apply it to create the key pair automatically.
+**Purpose:** Review the execution plan, then apply it to create the new resources automatically.
 
 ## Verification Steps
 
@@ -96,7 +98,7 @@ terraform state show aws_vpc.nautilus-vpc
 
 Expected output:
 
-```json
+```bash
 resource "aws_vpc" "nautilus-vpc" {
 	arn = "arn:aws:ec2:us-east-1:000000000000:vpc/vpc-1e62e82acd6d27899"
 	assign_generated_ipv6_cidr_block = true

@@ -101,7 +101,7 @@ terraform plan
 terraform apply -auto-approve
 ```
 
-**Purpose:** Review the execution plan, then apply it to create the key pair automatically.
+**Purpose:** Review the execution plan, then apply it to create the new resources automatically.
 
 ## Verification Steps
 
