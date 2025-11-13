@@ -29,7 +29,7 @@ When approaching this challenge, I broke it down into a sequence of steps:
 3. Initialize and apply the Terraform workflow to create the infrastructure.
 4. Verify that the VPC was created successfully on AWS.
 
-### 1. What Exactly Is an AWS VPC?
+### 1. What Exactly is an AWS VPC?
 
 An AWS VPC (Virtual Private Cloud) is a **virtual network** dedicated to an AWS account.
 

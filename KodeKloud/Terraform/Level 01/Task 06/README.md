@@ -25,7 +25,7 @@ When approaching this challenge, I broke it down into a sequence of steps:
 3. Initialize and apply the Terraform workflow to create the infrastructure.
 4. Verify that the Elastic IP was created successfully on AWS.
 
-### 1. What Exactly Is an AWS Elastic IP?
+### 1. What Exactly is an AWS Elastic IP?
 
 An AWS Elastic IP (EIP) is a **static, public IPv4 address** designed for dynamic cloud computing in AWS. 
 

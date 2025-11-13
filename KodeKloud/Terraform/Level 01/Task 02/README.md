@@ -30,7 +30,7 @@ When approaching this challenge, I broke it down into a sequence of steps:
 3. Initialize and apply the Terraform workflow to create the infrastructure.
 4. Verify that the security group was created successfully on AWS.
 
-### 1. What Exactly Is an AWS Security Group?
+### 1. What Exactly is an AWS Security Group?
 
 An AWS Security Group is a **virtual firewall that controls inbound and outbound traffic** to AWS resources.
 

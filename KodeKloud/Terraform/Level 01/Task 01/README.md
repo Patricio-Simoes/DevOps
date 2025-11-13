@@ -27,7 +27,7 @@ When approaching this challenge, I broke it down into a sequence of steps:
 3. Initialize and apply the Terraform workflow to create the infrastructure.
 4. Verify that the key pair was created successfully on AWS.
 
-### 1. What Exactly Is an AWS Key Pair?
+### 1. What Exactly is an AWS Key Pair?
 
 An **AWS key pair** is a set of cryptographic credentials used for authentication and secure communication with AWS services—most commonly when connecting to EC2 instances via SSH.
 
