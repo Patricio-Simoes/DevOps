@@ -39,7 +39,6 @@ An EC2 instance (short for Elastic Compute Cloud instance) in AWS (Amazon Web Se
 
 ### 3. The Terraform Solution
 
-
 Terraform provides the following resources for this task:
 
 - `aws_ami_from_instance` to create an AMI from an existing EC2 instance in AWS.
