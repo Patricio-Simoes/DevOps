@@ -89,7 +89,7 @@ terraform apply -auto-approve
 
 Once Terraform finishes applying the configuration, verifying the solution requires: 
 
-### 1. Check if the AMI was created on AWS
+### 1. Check if the EBS volume was created on AWS
 
 ```bash
 erraform state show aws_ebs_volume.datacenter_volume

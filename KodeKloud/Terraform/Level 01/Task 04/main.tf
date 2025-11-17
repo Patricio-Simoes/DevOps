@@ -1,5 +1,5 @@
 resource "aws_vpc" "nautilus-vpc" {
-  cidr_block = "192.168.0.0/24"
+  cidr_block                       = "192.168.0.0/24"
   assign_generated_ipv6_cidr_block = true
 
   tags = {
