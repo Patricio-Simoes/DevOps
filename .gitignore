@@ -240,3 +240,7 @@ terraform.rc
 *.pem
 
 .terraform.lock.hcl
+
+.DS_Store
+.obsidian
+.vscode
