@@ -20,9 +20,7 @@ Terraform is available for Linux, MacOS and Windows.
 
 See the [official Hashicorp documentation](https://developer.hashicorp.com/terraform/install) for detailed install instructions.
 
-## Table of Contents
-
-### Notes
+## Notes
  
 - [00. Best Practices](./00.%20Best%20Practices.md)
 - [01. State file](01.%20State%20file.md)
@@ -31,6 +29,6 @@ See the [official Hashicorp documentation](https://developer.hashicorp.com/terra
 - [04. Variable Types](04.%20Variable%20Types.md)
 - [05. Terraform Commands](05.%20Terraform%20Commands.md)
 
-### Projects
+## Projects
 
 - [(AWS) Small Dev Environment](./Projects/Dev-Environment)

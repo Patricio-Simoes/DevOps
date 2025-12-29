@@ -2,7 +2,9 @@
 
 This repository contains a Terraform mini project that provisions a simple, publicly accessible development environment on AWS.
 
-![Architecture Diagram](./assets/Scenario.png)
+<div align="center">
+    <img src="./assets/Scenario.png" alt="Architecture Diagram">
+</div>
 
 ## Architecture breakdown
 
