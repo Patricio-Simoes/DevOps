@@ -23,6 +23,7 @@ I use these to practice and solidate my knowledge regarding the technology and t
 - [03. ReplicaSets](03.%20ReplicaSets.md)
 - [04. Deployments](./04.%20Deployments.md)
 - [05. Services](./05.%20Services.md)
+- [06. Namespaces](./06.%20Namespaces.md)
 
 ## Projects
 
