@@ -12,7 +12,7 @@ This section contains notes taken regarding Kubernetes.
 I use these to practice and solidate my knowledge regarding the technology and try to keep them updated as i dig deeper.
 
 <div align="center">
-  <img src="../Assets/Images/Kubernetes - Logo.png" alt="Kubernetes - Logo" />
+  <img src="../Assets/Images/Logos/Kubernetes.png" alt="Kubernetes" width="200" height="200"/>
 </div>
 
 ## Notes
@@ -23,6 +23,9 @@ I use these to practice and solidate my knowledge regarding the technology and t
 - [03. ReplicaSets](03.%20ReplicaSets.md)
 - [04. Deployments](./04.%20Deployments.md)
 - [05. Services](./05.%20Services.md)
+- [06. Namespaces](./06.%20Namespaces.md)
+- [07. Scheduling](./07.%20Scheduling.md)
+- [08. DaemonSets](./08.%20DaemonSets.md)
 
 ## Projects
 

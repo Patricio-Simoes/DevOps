@@ -10,7 +10,7 @@ tags:
 Bellow is a collection of notes taken during my preparation for the AWS Cloud Practitioner certification.
 
 <div align="center">
-  <img src="../../Assets/Images/AWS - Cloud Practitioner Badge.png" alt="AWS - Cloud Practitioner Badge" />
+  <img src="../../Assets/Images/Badges/AWS - Cloud Practitioner.png" alt="AWS - Cloud Practitioner" width="200" height="200"/>
 </div>
 
 ### Notes
