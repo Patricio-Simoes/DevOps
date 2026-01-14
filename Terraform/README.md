@@ -9,6 +9,11 @@ tags:
 
 Terraform is a **IaC (Infrastructure as Code) tool**, developed by HashiCorp that can be used to build, change, and **manage infrastructure** by defining resource configurations that can be versioned, reused, and shared.
 
+<div align="center">
+  <img src="../Assets/Images/Logos/Terraform.png" alt="Terraform" width="200" height="200"/>
+</div>
+
+
 **Key Principles:**
 
 - **Declarative**: You describe the desired state, Terraform figures out how to achieve it

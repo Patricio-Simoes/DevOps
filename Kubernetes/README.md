@@ -9,7 +9,7 @@ tags:
 
 This section contains notes taken regarding Kubernetes.
 
-I use these to practice and solidate my knowledge regarding the technology and try to keep them updated as i dig deeper.
+I use these to practice and solidify my knowledge regarding the technology and try to keep them updated as i dig deeper.
 
 <div align="center">
   <img src="../Assets/Images/Logos/Kubernetes.png" alt="Kubernetes" width="200" height="200"/>

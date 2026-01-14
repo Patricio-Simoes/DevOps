@@ -14,21 +14,21 @@ In this repository, i keep a collection of notes, mini-projects and useful resou
     <tr>
       <td align="center">
         <a href="./AWS/">
-          <img src="./Assets/Images/Logos/AWS.png" width="70" height="75" alt="AWS Logo" />
+          <img src="./Assets/Images/Logos/AWS.png" width="85" height="75" alt="AWS Logo" />
           <br />
           <b>AWS</b>
         </a>
       </td>
       <td align="center">
         <a href="./Kubernetes/">
-          <img src="./Assets/Images/Logos/Kubernetes.png" width="70" height="75" alt="Kubernetes Logo" />
+          <img src="./Assets/Images/Logos/Kubernetes.png" width="75" height="75" alt="Kubernetes Logo" />
           <br />
           <b>Kubernetes</b>
         </a>
       </td>
       <td align="center">
         <a href="./Terraform/">
-          <img src="./Assets/Images/Logos/Terraform.png" width="70" height="75" alt="Terraform Logo" />
+          <img src="./Assets/Images/Logos/Terraform.png" width="75" height="75" alt="Terraform Logo" />
           <br />
           <b>Terraform</b>
         </a>
