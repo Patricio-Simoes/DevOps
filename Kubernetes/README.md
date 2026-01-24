@@ -26,6 +26,7 @@ I use these to practice and solidify my knowledge regarding the technology and t
 - [06. Namespaces](./06.%20Namespaces.md)
 - [07. Scheduling](./07.%20Scheduling.md)
 - [08. DaemonSets](./08.%20DaemonSets.md)
+- [09. Security](./09.%20Security.md)
 
 ## Projects
 
